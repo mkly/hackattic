@@ -7,11 +7,7 @@ class Block:
         self.difficulty = difficulty
         self.nonce = nonce
 
-    def generate_sha(self, nonce: int = 0):
-        if nonce != 0:
-            self.nonce = nonce
-
-        self.nonce += 1
+    def generate_sha(self):
         json = dumps({
             'data': self.data,
             'nonce': self.nonce
@@ -26,3 +22,5 @@ class Block:
         fill = len(hash) * 4
         return (bin(int(hash, 16))[2:]).zfill(fill)
 
+    def generate_new_nonce(self):
+        self.nonce += 1

@@ -22,3 +22,5 @@ def mine(problem_uri, solve_uri):
             print(result)
             print(block.nonce)
             break
+        else:
+            block.generate_new_nonce()
