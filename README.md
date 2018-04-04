@@ -1,4 +1,4 @@
-Challenges from h^
-------------------
+Challenges from a site on the internet
+--------------------------------------
 
-Nothing to see here. Just storing exercises from [hackattic](https://hackattic.com)
+Nothing to see here.
